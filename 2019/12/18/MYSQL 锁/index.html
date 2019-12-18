@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 
 
 <head>
@@ -8,15 +8,15 @@
   <meta name="viewport"
         content="width=device-width, initial-scale=1.0, user-scalable=no">
   <title>
-    hello-world2 | Hexo
+    MYSQL 锁 | 记录
   </title>
-  <meta name="description" content="">
+  <meta name="description" content="技术小屋">
   
   <meta name="keywords" content="
   
   ">
   
-  <meta name="author" content="John Doe">
+  <meta name="author" content="明城">
 
   <meta http-equiv="Cache-Control" content="no-transform"/>
   <meta http-equiv="Cache-Control" content="no-siteapp">
@@ -107,7 +107,7 @@
     </ul>
     <h2 class="header-title">
       <i class="fa fa-book text-muted"></i>
-      <a href="/">Hexo</a>
+      <a href="/">记录</a>
       
       
     </h2>
@@ -128,7 +128,7 @@
 <div class="post-container container">
   <h3>
     <i class="fa fa-user-o"></i>
-    John Doe
+    明城
 
     <span class="post-date float-right" title="{{moment(1576656282845).format('MMM DD, YYYY, h:mm:ss A')}}">
       <i class="fa fa-pencil-square-o"></i>
@@ -137,7 +137,7 @@
   </h3>
 
   <article class="post-content">
-    <h1>hello-world2</h1>
+    <h1>MYSQL 锁</h1>
     <h2 id="MySQL-锁"><a href="#MySQL-锁" class="headerlink" title="MySQL 锁"></a>MySQL 锁</h2><p>根据加锁的范围，MySQL 里面的锁大致可以分成全局锁、表级锁和行锁三类</p>
 <h2 id="全局锁"><a href="#全局锁" class="headerlink" title="全局锁"></a>全局锁</h2><p>全局锁就是对整个数据库实例加锁。<br>MySQL 提供了一个加全局读锁的方法， 命令是 Flush tables with read lock (FTWRL)<br>加上全局锁后，整个库处于只读状态，之后其他的线程以下语句会被阻塞:数据更新语句(数据的增删 改)、数据定义语句(包括建表、修改表结构等)和更新类事务的提交语句</p>
 <h3 id="全局锁使用场景"><a href="#全局锁使用场景" class="headerlink" title="全局锁使用场景"></a>全局锁使用场景</h3><p>备份库，全库的逻辑备份。也就是把整个库的表 <code>select</code> 出来形成文本</p>
@@ -176,17 +176,17 @@
 <div class="footer-wrapper container">
   <footer class="footer clearfix">
     <div class="clearfix">
-    <a href="http://yoursite.com" class="footer-logo">
+    <a href="https://github.com/zhongmc1995" class="footer-logo">
       <i class="fa fa-github"></i>
     </a>
     <ul class="footer-social-link">
-      <li>© 2019 John Doe</li>
-      <li><a href="http://yoursite.com">Home</a></li>
+      <li>© 2019 明城</li>
+      <li><a href="https://github.com/zhongmc1995">Home</a></li>
       
     </ul>
     <div class="footer-theme-info">
-      Theme <a href="//github.com/sabrinaluo/hexo-theme-replica" target="_blank" rel="noopener">Replica</a>
-      by <a href="//github.com/sabrinaluo" target="_blank" rel="noopener">Hiitea</a> ❤ Powered by Hexo
+      Theme <a href="//github.com/sabrinaluo/hexo-theme-replica">Replica</a>
+      by <a href="//github.com/sabrinaluo">Hiitea</a> ❤ Powered by Hexo
     </div>
     </div>
     
